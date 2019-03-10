@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "pinder-20190310203558-authRole",
+            "UnauthRoleArn": "arn:aws:iam::030555009967:role/pinder-20190310203558-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::030555009967:role/pinder-20190310203558-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "pinder-20190310203558-deployment",
+            "UnauthRoleName": "pinder-20190310203558-unauthRole",
+            "StackName": "pinder-20190310203558",
+            "StackId": "arn:aws:cloudformation:us-east-1:030555009967:stack/pinder-20190310203558/bc460d60-436b-11e9-9c76-0e8cd4caae34"
+        }
+    }
+}
