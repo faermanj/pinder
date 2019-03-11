@@ -1,8 +1,10 @@
 var TIMEOUT = 10;
+var baseUrl = "https://source.unsplash.com/collection/1424240/220";
 
 function doAnwser(app, petme) {
     var answer = {
         petme: petme,
+        secs: app.secs,
         img: app.cardSrc
     }
 
@@ -14,7 +16,7 @@ function doAnwser(app, petme) {
             console.log(error);
         });
 
-    app.cardSrc = "https://source.unsplash.com/collection/1424240/500x500?rand=" + Math.random();
+    app.cardSrc = baseUrl + "?rand=" + Math.random();
     app.secs = 0;
     app.buttonsDisabled = true;
 }
@@ -26,7 +28,7 @@ var app = new Vue({
         timeout: TIMEOUT,
         secs: 0,
         buttonsDisabled: false,
-        cardSrc: "https://source.unsplash.com/collection/1424240"
+        cardSrc: baseUrl
     },
     mounted: function () {
         window.setInterval(() => {

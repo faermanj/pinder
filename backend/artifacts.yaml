@@ -1,0 +1,6 @@
+Resources:
+  ArtifactsBucket:
+    Type: AWS::S3::Bucket
+Outputs:
+  BucketName:
+    Value: !Ref ArtifactsBucket
